@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .shine {
+    @apply relative overflow-hidden;
+  }
+
+  .shine::after {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 100%
+    );
+    animation: shine 2s infinite;
+    transform: skewX(-20deg);
+  }
+
+  @keyframes shine {
+    from {
+      transform: translateX(-100%) skewX(-20deg);
+    }
+    to {
+      transform: translateX(200%) skewX(-20deg);
+    }
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
