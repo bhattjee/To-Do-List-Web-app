@@ -1,6 +1,6 @@
-# To-Do List Clone
+# Simple To-Do List Web app
 
-A modern, feature-rich to-do list application built with React, TypeScript, and Vite. This app helps you manage tasks, track gym workouts, and maintain productivity streaks with a beautiful, animated interface.
+A simple to-do list application built with React, TypeScript, and Vite. This app helps you manage tasks, track gym workouts, and maintain productivity streaks with a beautiful, animated interface.
 
 ## Features
 
@@ -119,4 +119,5 @@ This application does not use any external APIs, authentication, or store sensit
 
 ## License
 
+MIT Release
 This project is open source and available for educational purposes.
